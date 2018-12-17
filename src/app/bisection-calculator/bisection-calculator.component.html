@@ -1,0 +1,4 @@
+<div class="container">
+    <app-bisection-form (calculate)="onCalculate($event)" class="box"></app-bisection-form>
+    <app-bisection-result *ngIf="result" [bisectionOutput]="result" class="box"></app-bisection-result>
+</div>

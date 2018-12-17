@@ -1,0 +1,46 @@
+<form [formGroup]="polynomialForm" novalidate (ngSubmit)="onSubmit()">
+  <mat-card class="polynomial-card">
+    <mat-card-header>
+      <mat-card-title>Datos de Entrada</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <h4>Función</h4>
+      <div class="row">
+        <div class="label">f(x) = </div>
+        <div class="col">
+          <mat-form-field class="short-number" [style.width.px]="sizes.a">
+            <input matInput type="number" placeholder="a" formControlName="a">
+          </mat-form-field>
+        </div>
+        <div class="label"> x<sup>2</sup> + </div>
+        <div class="col">
+          <mat-form-field class="short-number" [style.width.px]="sizes.b">
+            <input matInput type="number" placeholder="b" formControlName="b">
+          </mat-form-field>
+        </div>
+        <div class="label">x + </div>
+        <div class="col">
+            <mat-form-field type="number" class="short-number" [style.width.px]="sizes.c">
+              <input type="number" matInput placeholder="c" formControlName="c">
+            </mat-form-field>
+          </div>
+      </div>
+      <h4>Intervalo</h4>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="short-number" [style.width.px]="sizes.x0">
+            <input type="number" matInput placeholder="x0" formControlName="x0">
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="short-number" [style.width.px]="sizes.x1">
+            <input type="number" matInput placeholder="x1" formControlName="x1">
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit" [disabled]="polynomialForm.invalid">Calcular</button>
+    </mat-card-actions>
+  </mat-card>
+</form>

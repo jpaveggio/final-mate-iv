@@ -1,0 +1,26 @@
+#header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 3px #00000080;
+}
+
+#header h1 {
+    text-align:center;
+    flex-grow: 1;
+    font-family: monospace;
+    font-weight: 100;
+}
+
+#header img {
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+app-bisection-calculator {
+  display: flex;
+  flex-direction: row;
+}
