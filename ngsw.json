@@ -1,0 +1,73 @@
+{
+  "configVersion": 1,
+  "index": "https://jpaveggio.github.io/final-mate-iv/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://jpaveggio.github.io/final-mate-iv/favicon.ico",
+        "https://jpaveggio.github.io/final-mate-iv/index.html",
+        "https://jpaveggio.github.io/final-mate-iv/main.f64e33a7656f67bd8c66.js",
+        "https://jpaveggio.github.io/final-mate-iv/polyfills.20ab2d163684112c2aba.js",
+        "https://jpaveggio.github.io/final-mate-iv/runtime.ec2944dd8b20ec099bf3.js",
+        "https://jpaveggio.github.io/final-mate-iv/styles.52e842fddf05be77124f.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://jpaveggio.github.io/final-mate-iv/assets/Logo_oficial_UNRN.jpg",
+        "https://jpaveggio.github.io/final-mate-iv/assets/icons/icon-128x128.png",
+        "https://jpaveggio.github.io/final-mate-iv/assets/icons/icon-144x144.png",
+        "https://jpaveggio.github.io/final-mate-iv/assets/icons/icon-152x152.png",
+        "https://jpaveggio.github.io/final-mate-iv/assets/icons/icon-192x192.png",
+        "https://jpaveggio.github.io/final-mate-iv/assets/icons/icon-384x384.png",
+        "https://jpaveggio.github.io/final-mate-iv/assets/icons/icon-512x512.png",
+        "https://jpaveggio.github.io/final-mate-iv/assets/icons/icon-72x72.png",
+        "https://jpaveggio.github.io/final-mate-iv/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://jpaveggio.github.io/final-mate-iv/assets/Logo_oficial_UNRN.jpg": "1581543208d216c6c9cf1c7e1a8b8189001d6c3b",
+    "https://jpaveggio.github.io/final-mate-iv/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://jpaveggio.github.io/final-mate-iv/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://jpaveggio.github.io/final-mate-iv/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://jpaveggio.github.io/final-mate-iv/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://jpaveggio.github.io/final-mate-iv/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://jpaveggio.github.io/final-mate-iv/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://jpaveggio.github.io/final-mate-iv/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://jpaveggio.github.io/final-mate-iv/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://jpaveggio.github.io/final-mate-iv/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "https://jpaveggio.github.io/final-mate-iv/index.html": "4f63cd9ae27613f5f5942d9de5bc737afede8612",
+    "https://jpaveggio.github.io/final-mate-iv/main.f64e33a7656f67bd8c66.js": "74fc02864447426f06fe25810d77628eb04e58c8",
+    "https://jpaveggio.github.io/final-mate-iv/polyfills.20ab2d163684112c2aba.js": "ce68d153e9b9b6d26b625069c0ee99ae09c6f255",
+    "https://jpaveggio.github.io/final-mate-iv/runtime.ec2944dd8b20ec099bf3.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "https://jpaveggio.github.io/final-mate-iv/styles.52e842fddf05be77124f.css": "8a0a1e1e067794a3a77e8fd6c9b0cebd5cfb503b"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
