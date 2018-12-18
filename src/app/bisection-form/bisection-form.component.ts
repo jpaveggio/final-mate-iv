@@ -17,9 +17,6 @@ export class BisectionFormComponent implements OnInit {
       this.fb.control(-3, Validators.required),
       this.fb.control(-2, Validators.required)
     ]),
-    a: [1, Validators.required],
-    b: [1, Validators.required],
-    c: [-1, Validators.required],
     x0: [0, Validators.required],
     x1: [3, Validators.required]
   }, {
@@ -37,7 +34,6 @@ export class BisectionFormComponent implements OnInit {
       .pipe(
         distinctUntilChanged(),
         map(this.extractSizes),
-        tap(console.log),
       )
       .subscribe((sizes) => this.sizes = sizes);
     this.sizes = this.extractSizes(this.polynomialForm.getRawValue());
@@ -76,14 +72,9 @@ export class BisectionFormComponent implements OnInit {
 
   onSubmit() {
     const p = new Polynomial();
-    this.coefficientsFormArray.value.reverse().forEach((c, d) => {
+    this.coefficientsFormArray.getRawValue().reverse().forEach((c, d) => {
       p.setCoefficient(d, c);
     });
-    /*
-    p.setCoefficient(2, this.polynomialForm.get('a').value);
-    p.setCoefficient(1, this.polynomialForm.get('b').value);
-    p.setCoefficient(0, this.polynomialForm.get('c').value);
-    */
     this.calculate.emit({
       polynomial: p,
       x0: this.polynomialForm.get('x0').value,

@@ -19,9 +19,11 @@ export class BisectionCalculatorComponent implements OnInit {
 
   onCalculate(bi: BisectionInput) {
     this.service.findRoot(bi).subscribe((r) => {
-      console.log(r);
       this.result = r;
-    }, error => alert(error.message));
+    }, error => {
+      this.result = null;
+      alert(error.message);
+    });
   }
 
 }
