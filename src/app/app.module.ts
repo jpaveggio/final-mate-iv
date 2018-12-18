@@ -25,7 +25,6 @@ import { BisectionResultComponent } from './bisection-result/bisection-result.co
     MatInputModule,
     MatButtonModule,
     MatSelectModule,
-    MatRadioModule,
     MatCardModule,
     MatDividerModule,
     ReactiveFormsModule,

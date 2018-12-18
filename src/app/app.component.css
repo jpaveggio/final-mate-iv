@@ -1,3 +1,7 @@
+:host {
+    min-height: 100%;
+}
+
 #header {
     display: flex;
     flex-direction: row;
@@ -23,4 +27,13 @@
 app-bisection-calculator {
   display: flex;
   flex-direction: row;
+}
+
+.footer {
+    margin-top: 21px;
+    margin-bottom: 8px;
+    margin-left: 13px;
+    font-size: 16px;
+    font-family: serif;
+    font-style: italic;
 }

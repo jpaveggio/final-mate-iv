@@ -6,24 +6,24 @@
     <mat-card-content>
       <h4>Función</h4>
       <div class="row">
+        <mat-form-field>
+          <mat-select placeholder="Grado" formControlName="degree">
+            <mat-option *ngFor="let d of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]" [value]="d">
+              {{d}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="row" formArrayName="coefficients">
         <div class="label">f(x) = </div>
-        <div class="col">
-          <mat-form-field class="short-number" [style.width.px]="sizes.a">
-            <input matInput type="number" placeholder="a" formControlName="a">
-          </mat-form-field>
-        </div>
-        <div class="label"> x<sup>2</sup> + </div>
-        <div class="col">
-          <mat-form-field class="short-number" [style.width.px]="sizes.b">
-            <input matInput type="number" placeholder="b" formControlName="b">
-          </mat-form-field>
-        </div>
-        <div class="label">x + </div>
-        <div class="col">
-            <mat-form-field type="number" class="short-number" [style.width.px]="sizes.c">
-              <input type="number" matInput placeholder="c" formControlName="c">
+        <div *ngFor="let coef of coefficientsFormArray.controls; index as i; last as l" class="col">
+            <mat-form-field class="short-number" [style.width.px]="sizes.coefficients[i]">
+              <input matInput type="number" [formControlName]="i">
             </mat-form-field>
-          </div>
+            <div *ngIf="!l" class="label">x<sup *ngIf="coefficientsFormArray.length-i-1>1">{{coefficientsFormArray.length-i-1}}</sup>
+              <span>&nbsp;+</span> 
+            </div>
+        </div>
       </div>
       <h4>Intervalo</h4>
       <div class="row">
